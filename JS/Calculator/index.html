@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>Calculator program</h1>
+        <h2>If you wanna calculate someting, it's perfect place for that</h2>
+      </div>
+    </header>
+    <!-- In main (TODO)
+     TEST
+      tab with +/-/etc...
+      place with result of calculates
+      every element like +/-/=/etc... need id
+    -->
+    <main>
+      <div class="calc-container">
+        <div class="calc-content">
+          <div class="result">
+            <h4 id="result">0000</h4>
+          </div>
+          <div class="calc-options">
+            <div class="numbers">
+              <button class="number" id="1" onclick="calc(1)">1</button>
+              <button class="number" id="2" onclick="calc(2)">2</button>
+              <button class="number" id="3" onclick="calc(3)">3</button>
+              <button class="number" id="4" onclick="calc(4)">4</button>
+              <button class="number" id="5" onclick="calc(5)">5</button>
+              <button class="number" id="6" onclick="calc(6)">6</button>
+              <button class="number" id="7" onclick="calc(7)">7</button>
+              <button class="number" id="8" onclick="calc(8)">8</button>
+              <button class="number" id="9" onclick="calc(9)">9</button>
+              <button class="number" id="0" onclick="calc(0)">0</button>
+            </div>
+            <div class="operations">
+              <button class="operation" id="+" onclick="operation('+')">
+                +
+              </button>
+              <button class="operation" id="-" onclick="operation('-')">
+                -
+              </button>
+              <button class="operation" id="*" onclick="operation('*')">
+                *
+              </button>
+              <button class="operation" id="/" onclick="operation('/')">
+                /
+              </button>
+              <button class="operation" id="=" onclick="operation('=')">
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

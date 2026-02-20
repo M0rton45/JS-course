@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinanceTracker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to FinanceTracker</h1>
+    </header>
+    <main>
+      <div class="mainCountainer">
+        <div class="leftCountainer">
+          <div class="info">
+            <h3>Track your finance now</h3>
+            <p>So, you can control your money</p>
+          </div>
+          <div class="form">
+            <div class="inputs">
+              <input type="text" id="text-input" class="input" />
+              <input type="number" id="balance-input" class="input" />
+            </div>
+            <div class="interaction">
+              <select name="select" id="type" class="selects">
+                <option value="income" class="income-select">Income</option>
+                <option value="expense" class="expense-select">
+                  Expense
+                </option></select
+              ><br />
+              <button type="button" onclick="track()" class="btn">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="rightCountainer">
+          <div class="balance">
+            <h2>Your balance:</h2>
+            <h2 id="balance">0</h2>
+          </div>
+          <div class="history">
+            <div class="tab">
+              <h2>History finance</h2>
+              <div class="header-tab first-header-tab">
+                <h3 class="content-h3">Type/Name of transaction</h3>
+                <h3 class="content-h3">Value +/-</h3>
+              </div>
+              <div id="history"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
